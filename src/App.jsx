@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router";
 import { Sidebar } from "./components/layout";
-import { OverviewPage, ProductsPage } from "./pages";
+import { OverviewPage, ProductsPage, UsersPage } from "./pages";
 export default function App() {
 	return (
 		<div className="h-screen bg-zinc-900 text-zinc-100 flex overflow-hidden">
@@ -12,6 +12,7 @@ export default function App() {
 			<Routes>
 				<Route path="/" element={<OverviewPage />} />
 				<Route path="/products" element={<ProductsPage />} />
+				<Route path="/users" element={<UsersPage />} />
 			</Routes>
 		</div>
 	);
