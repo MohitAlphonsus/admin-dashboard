@@ -82,3 +82,11 @@ export const SALES__DATA = [
 	{ name: "May", sales: 7100 },
 	{ name: "Jun", sales: 7500 },
 ];
+
+export const CATEGORY__DATA = [
+	{ name: "Electronics", value: 4500 },
+	{ name: "Clothing", value: 3200 },
+	{ name: "Home & Garden", value: 2800 },
+	{ name: "Books", value: 2100 },
+	{ name: "Sports & Outdoors", value: 1900 },
+];

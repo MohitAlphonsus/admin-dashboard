@@ -1,5 +1,9 @@
 import { Header } from "../components/ui";
-import { SalesOverviewChart, StatCard } from "../components/overview";
+import {
+	SalesOverviewChart,
+	CategoryDistributionChart,
+	StatCard,
+} from "../components/overview";
 import { motion } from "motion/react";
 import { STATCARD__DATA } from "../constant";
 
@@ -27,6 +31,7 @@ export default function OverviewPage() {
 
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 					<SalesOverviewChart />
+					<CategoryDistributionChart />
 				</div>
 			</main>
 		</div>
