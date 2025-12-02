@@ -3,6 +3,7 @@ import {
 	SalesOverviewChart,
 	CategoryDistributionChart,
 	StatCard,
+	SalesChannelChart,
 } from "../components/overview";
 import { motion } from "motion/react";
 import { STATCARD__DATA } from "../constant";
@@ -32,6 +33,7 @@ export default function OverviewPage() {
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 					<SalesOverviewChart />
 					<CategoryDistributionChart />
+					<SalesChannelChart />
 				</div>
 			</main>
 		</div>
