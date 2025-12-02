@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { CATEGORY__DATA } from "../../constant";
+import { CATEGORY__DATA, COLORS } from "../../constant";
 import {
 	Cell,
 	Legend,
@@ -8,7 +8,6 @@ import {
 	ResponsiveContainer,
 	Tooltip,
 } from "recharts";
-const COLORS = ["#6366F1", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
 
 export default function CategoryDistributionChart() {
 	return (
