@@ -1,6 +1,9 @@
 import {
 	AlertTriangle,
 	BarChart2,
+	CheckCircle,
+	Clock,
+	CreditCard,
 	DollarSign,
 	Package,
 	Settings,
@@ -124,6 +127,37 @@ export const USERS__STATCARD__DATA = [
 	{ id: 4, name: "Churn Rate", icon: UserX, value: "12.5%", color: "#EF4444" },
 ];
 
+export const SALES__STATCARD__DATA = [
+	{
+		id: 1,
+		name: "Total Revenue",
+		icon: DollarSign,
+		value: "$1,234,567",
+		color: "#6366F1",
+	},
+	{
+		id: 2,
+		name: "Avg. Order Value",
+		icon: ShoppingCart,
+		value: "$78.90",
+		color: "#10B981",
+	},
+	{
+		id: 3,
+		name: "Conversion Rate",
+		icon: TrendingUp,
+		value: "3.45%",
+		color: "#F59E0B",
+	},
+	{
+		id: 4,
+		name: "Sales Growth",
+		icon: CreditCard,
+		value: "12.3%",
+		color: "#EF4444",
+	},
+];
+
 export const SALES__DATA = [
 	{ name: "Jul", sales: 4200 },
 	{ name: "Aug", sales: 3800 },
@@ -153,6 +187,34 @@ export const SALES__CHANNEL__DATA = [
 	{ name: "Mobile App", value: 38200 },
 	{ name: "Marketplace", value: 29800 },
 	{ name: "Social Media", value: 18700 },
+];
+
+export const DAILY__SALES__DATA = [
+	{ name: "Mon", sales: 1000 },
+	{ name: "Tue", sales: 1200 },
+	{ name: "Wed", sales: 900 },
+	{ name: "Thu", sales: 1100 },
+	{ name: "Fri", sales: 1300 },
+	{ name: "Sat", sales: 1600 },
+	{ name: "Sun", sales: 1400 },
+];
+
+export const SALES__BY__CATEGORY__DATA = [
+	{ name: "Electronics", value: 400 },
+	{ name: "Clothing", value: 300 },
+	{ name: "Home & Garden", value: 200 },
+	{ name: "Books", value: 100 },
+	{ name: "Others", value: 150 },
+];
+
+export const MONTHLY__SALES__DATA = [
+	{ month: "Jan", sales: 4000 },
+	{ month: "Feb", sales: 3000 },
+	{ month: "Mar", sales: 5000 },
+	{ month: "Apr", sales: 4500 },
+	{ month: "May", sales: 6000 },
+	{ month: "Jun", sales: 5500 },
+	{ month: "Jul", sales: 7000 },
 ];
 
 export const CATEGORY__DATA = [
@@ -326,5 +388,112 @@ export const USER__DATA = [
 		email: "charlie@example.com",
 		role: "Moderator",
 		status: "Active",
+	},
+];
+
+export const ORDER__STATCARD__DATA = [
+	{
+		id: 1,
+		name: "Total Orders",
+		icon: ShoppingBag,
+		value: "1,234",
+		color: "#6366F1",
+	},
+	{
+		id: 2,
+		name: "Pending Orders",
+		icon: Clock,
+		value: "56",
+		color: "#F59E0B",
+	},
+	{
+		id: 3,
+		name: "Completed Orders",
+		icon: CheckCircle,
+		value: "1,178",
+		color: "#10B981",
+	},
+	{
+		id: 4,
+		name: "Total Revenue",
+		icon: DollarSign,
+		value: "$98,765",
+		color: "#EF4444",
+	},
+];
+
+export const DAILY__ORDERS__DATA = [
+	{ date: "07/01", orders: 45 },
+	{ date: "07/02", orders: 52 },
+	{ date: "07/03", orders: 49 },
+	{ date: "07/04", orders: 60 },
+	{ date: "07/05", orders: 55 },
+	{ date: "07/06", orders: 58 },
+	{ date: "07/07", orders: 62 },
+];
+
+export const ORDER__STATUS__DATA = [
+	{ name: "Pending", value: 30 },
+	{ name: "Processing", value: 45 },
+	{ name: "Shipped", value: 60 },
+	{ name: "Delivered", value: 120 },
+];
+
+export const ORDER__DATA = [
+	{
+		id: "ORD001",
+		customer: "John Doe",
+		total: 235.4,
+		status: "Delivered",
+		date: "2023-07-01",
+	},
+	{
+		id: "ORD002",
+		customer: "Jane Smith",
+		total: 412.0,
+		status: "Processing",
+		date: "2023-07-02",
+	},
+	{
+		id: "ORD003",
+		customer: "Bob Johnson",
+		total: 162.5,
+		status: "Shipped",
+		date: "2023-07-03",
+	},
+	{
+		id: "ORD004",
+		customer: "Alice Brown",
+		total: 750.2,
+		status: "Pending",
+		date: "2023-07-04",
+	},
+	{
+		id: "ORD005",
+		customer: "Charlie Wilson",
+		total: 95.8,
+		status: "Delivered",
+		date: "2023-07-05",
+	},
+	{
+		id: "ORD006",
+		customer: "Eva Martinez",
+		total: 310.75,
+		status: "Processing",
+		date: "2023-07-06",
+	},
+	{
+		id: "ORD007",
+		customer: "David Lee",
+		total: 528.9,
+		status: "Shipped",
+		date: "2023-07-07",
+	},
+	{
+		id: "ORD008",
+		customer: "Grace Taylor",
+		total: 189.6,
+		status: "Delivered",
+		date: "2023-07-08",
 	},
 ];
