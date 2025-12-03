@@ -14,7 +14,7 @@ import { Card } from "../ui";
 export default function SalesOverviewChart() {
 	const [selectedTimeRange, setSelectedTimeRange] = useState("This Month");
 	return (
-		<Card>
+		<Card className="mb-8">
 			<div className="flex items-center justify-between mb-6">
 				<h2 className="text-xl font-semibold text-zinc-100">Sales Overview</h2>
 

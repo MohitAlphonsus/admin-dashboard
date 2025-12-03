@@ -14,7 +14,7 @@ import { SALES__CHANNEL__DATA, COLORS } from "../../constant";
 import { Card } from "../ui";
 export default function SalesChannelChart() {
 	return (
-		<Card>
+		<Card className="col-span-2">
 			<h2 className="text-lg font-medium mb-4 text-zinc-100">
 				Sales by Channel
 			</h2>

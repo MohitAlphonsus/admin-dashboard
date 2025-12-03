@@ -24,7 +24,7 @@ export default function ProductsTable() {
 	}
 
 	return (
-		<Card>
+		<Card className="mb-8">
 			<div className="flex justify-between items-center mb-6">
 				<h2 className="text-xl font-semibold text-zinc-100">Product List</h2>
 				<div className="relative">
