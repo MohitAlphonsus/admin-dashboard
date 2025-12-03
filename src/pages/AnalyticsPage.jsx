@@ -1,4 +1,4 @@
-import { Header } from "../components/ui";
+import { SectionContainer } from "../components/ui";
 import {
 	AIPoweredInsights,
 	ChannelPerformance,
@@ -11,22 +11,18 @@ import {
 
 export default function AnalyticsPage() {
 	return (
-		<div className="flex-1 overflow-auto relative z-10 bg-zinc-900">
-			<Header title={"Analytics Dashboard"} />
+		<SectionContainer title="Analytics Dashboard">
+			<OverviewCards />
+			<RevenueChart />
 
-			<main className="max-w-7xl mx-auto py-6 px-4 lg:px-8">
-				<OverviewCards />
-				<RevenueChart />
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+				<ChannelPerformance />
+				<ProductPerformance />
+				<UserRetention />
+				<CustomerSegmentation />
+			</div>
 
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-					<ChannelPerformance />
-					<ProductPerformance />
-					<UserRetention />
-					<CustomerSegmentation />
-				</div>
-
-				<AIPoweredInsights />
-			</main>
-		</div>
+			<AIPoweredInsights />
+		</SectionContainer>
 	);
 }

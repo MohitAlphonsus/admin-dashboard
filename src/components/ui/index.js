@@ -1,2 +1,3 @@
 import Header from "./Header";
-export { Header };
+import SectionContainer from "./SectionContainer";
+export { Header, SectionContainer };
