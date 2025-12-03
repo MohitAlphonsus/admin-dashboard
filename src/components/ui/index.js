@@ -1,3 +1,3 @@
-import Header from "./Header";
 import SectionContainer from "./SectionContainer";
-export { Header, SectionContainer };
+import Card from "./Card";
+export { SectionContainer, Card };

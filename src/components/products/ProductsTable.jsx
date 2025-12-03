@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Edit, Search, Trash2 } from "lucide-react";
 import { PRODUCT__DATA } from "../../constant";
+import { Card } from "../ui";
 const tableHeadingClasses =
 	"px-6 py-3 text-left text-xs font-medium text-zinc-400 uppercase tracking-wider";
 const tableBodyClasses = "px-6 py-4 whitespace-nowrap text-sm text-zinc-300";
@@ -23,12 +24,7 @@ export default function ProductsTable() {
 	}
 
 	return (
-		<motion.div
-			className="bg-zinc-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-zinc-700 mb-8"
-			initial={{ opacity: 0, y: 20 }}
-			animate={{ opacity: 1, y: 0 }}
-			transition={{ delay: 0.2 }}
-		>
+		<Card>
 			<div className="flex justify-between items-center mb-6">
 				<h2 className="text-xl font-semibold text-zinc-100">Product List</h2>
 				<div className="relative">
@@ -92,6 +88,6 @@ export default function ProductsTable() {
 					</tbody>
 				</table>
 			</div>
-		</motion.div>
+		</Card>
 	);
 }

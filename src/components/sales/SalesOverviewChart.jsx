@@ -8,17 +8,13 @@ import {
 	Tooltip,
 	ResponsiveContainer,
 } from "recharts";
-import { motion } from "motion/react";
+
 import { MONTHLY__SALES__DATA } from "../../constant";
+import { Card } from "../ui";
 export default function SalesOverviewChart() {
 	const [selectedTimeRange, setSelectedTimeRange] = useState("This Month");
 	return (
-		<motion.div
-			className="bg-zinc-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-zinc-700 mb-8"
-			initial={{ opacity: 0, y: 20 }}
-			animate={{ opacity: 1, y: 0 }}
-			transition={{ delay: 0.2 }}
-		>
+		<Card>
 			<div className="flex items-center justify-between mb-6">
 				<h2 className="text-xl font-semibold text-zinc-100">Sales Overview</h2>
 
@@ -59,6 +55,6 @@ export default function SalesOverviewChart() {
 					</AreaChart>
 				</ResponsiveContainer>
 			</div>
-		</motion.div>
+		</Card>
 	);
 }

@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { CATEGORY__DATA, COLORS } from "../../constant";
 import {
 	Cell,
@@ -8,15 +7,11 @@ import {
 	ResponsiveContainer,
 	Tooltip,
 } from "recharts";
+import { Card } from "../ui";
 
 export default function CategoryDistributionChart() {
 	return (
-		<motion.div
-			className="bg-zinc-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-zinc-700"
-			initial={{ opacity: 0, y: 20 }}
-			animate={{ opacity: 1, y: 0 }}
-			transition={{ delay: 0.3 }}
-		>
+		<Card>
 			<h2 className="text-lg font-medium mb-4 text-zinc-100">
 				Category Distribution
 			</h2>
@@ -53,6 +48,6 @@ export default function CategoryDistributionChart() {
 					</PieChart>
 				</ResponsiveContainer>
 			</div>
-		</motion.div>
+		</Card>
 	);
 }

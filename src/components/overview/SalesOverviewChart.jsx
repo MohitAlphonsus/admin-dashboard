@@ -9,14 +9,10 @@ import {
 	YAxis,
 } from "recharts";
 import { SALES__DATA } from "../../constant";
+import { Card } from "../ui";
 export default function SalesOverviewChart() {
 	return (
-		<motion.div
-			className="bg-zinc-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-zinc-700"
-			initial={{ opacity: 0, y: 20 }}
-			animate={{ opacity: 1, y: 0 }}
-			transition={{ delay: 0.2 }}
-		>
+		<Card>
 			<h2 className="text-lg font-medium mb-4 text-zinc-100">Sales Overview</h2>
 			<div className="h-80">
 				<ResponsiveContainer width={"100%"} height={"100%"}>
@@ -42,6 +38,6 @@ export default function SalesOverviewChart() {
 					</LineChart>
 				</ResponsiveContainer>
 			</div>
-		</motion.div>
+		</Card>
 	);
 }
