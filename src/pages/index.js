@@ -4,6 +4,7 @@ import UsersPage from "./UsersPage";
 import SalesPage from "./SalesPage";
 import OrdersPage from "./OrdersPage";
 import AnalyticsPage from "./AnalyticsPage";
+import SettingsPage from "./SettingsPage";
 
 export {
 	OverviewPage,
@@ -12,4 +13,5 @@ export {
 	SalesPage,
 	OrdersPage,
 	AnalyticsPage,
+	SettingsPage
 };
